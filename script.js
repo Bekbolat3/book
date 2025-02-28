@@ -1,7 +1,10 @@
 function loadContent(page) {
-    fetch(page)
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('content').innerHTML = data;
-        });
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", page, true);
+    xhr.onload = function () {
+        if (xhr.status == 200) {
+            document.getElementById('content').innerHTML = xhr.responseText;
+        }
+    };
+    xhr.send();
 }
