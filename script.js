@@ -3,7 +3,11 @@ function loadContent(page) {
     xhr.open("GET", page, true);
     xhr.onload = function () {
         if (xhr.status == 200) {
-            document.getElementById('content').innerHTML = xhr.responseText;
+            document.getElementById("content").innerHTML = xhr.responseText;
+            window.scrollTo({
+                top: document.getElementById("content").offsetTop,
+                behavior: "smooth"
+            });
         }
     };
     xhr.send();
