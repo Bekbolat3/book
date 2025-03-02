@@ -154,3 +154,40 @@ iframe:hover {
     transform: scale(1.1);
     box-shadow: 0 0 25px rgba(255, 0, 0, 1);
 }
+
+.audio-section {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    border: 1px solid #444;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    margin-top: 20px;
+}
+
+.audio-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.audio-item {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    transition: all 0.3s ease;
+}
+
+.audio-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 1);
+}
+
+.audio-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
