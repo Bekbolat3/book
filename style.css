@@ -6,37 +6,54 @@ body {
     background-color: #222;
     color: white;
 }
+
 header {
     background: black;
     padding: 10px;
 }
+
 header img {
     max-width: 200px;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
 }
+
 nav li {
     display: inline;
     margin: 0 20px;
 }
+
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
 }
+
 nav a:hover {
     color: #f00;
 }
+
+.welcome {
+    text-align: center;
+    margin-bottom: 30px; /* Чтобы текст был с отступом снизу */
+    z-index: 2; /* Чтобы текст был всегда сверху */
+    position: relative;
+}
+
 #content {
     margin-top: 20px;
     padding: 20px;
     border: 1px solid #444;
     background: #333;
     display: none;
+    position: relative; /* Контент появляется ниже текста */
+    z-index: 1; /* Контент под текстом */
 }
+
 .manga-buttons {
     display: flex;
     flex-wrap: wrap;
