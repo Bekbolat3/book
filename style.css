@@ -122,3 +122,34 @@ nav a:hover {
 .tom:hover img {
     box-shadow: 0 0 30px rgba(255, 0, 0, 1);
 }
+
+.video-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.video-section h2 {
+    margin-bottom: 30px;
+    color: #f00;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+.video-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+iframe {
+    border: 3px solid #f00;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+    transition: transform 0.3s ease;
+}
+
+iframe:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 1);
+}
