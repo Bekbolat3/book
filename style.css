@@ -62,3 +62,46 @@ nav a:hover {
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(255, 0, 0, 1);
 }
+
+.manga-tom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tom {
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.tom img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    transition: all 0.3s ease;
+}
+
+.tom p {
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.tom:hover {
+    transform: scale(1.1);
+}
+
+.tom:hover img {
+    box-shadow: 0 0 30px rgba(255, 0, 0, 1);
+}
