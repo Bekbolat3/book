@@ -155,39 +155,48 @@ iframe:hover {
     box-shadow: 0 0 25px rgba(255, 0, 0, 1);
 }
 
-.audio-section {
+.games-section {
     text-align: center;
-    padding: 20px;
-    background: #333;
-    border: 1px solid #444;
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
-    margin-top: 20px;
+    padding: 30px;
 }
 
-.audio-list {
+.section-title {
+    font-size: 2em;
+    color: #f00;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+
+.games-grid {
     display: flex;
-    gap: 30px;
     justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-.audio-item {
-    text-align: center;
-    padding: 20px;
-    background: #222;
-    border-radius: 10px;
+.game-card {
+    background: #333;
+    padding: 15px;
+    border-radius: 15px;
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 250px;
+    text-align: center;
 }
 
-.audio-item:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 30px rgba(255, 0, 0, 1);
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-.audio-item p {
-    margin-top: 10px;
-    font-weight: bold;
+.game-card p {
     color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
+.game-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 1);
+}
